@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: 'Gilroy';
     color: white;
+    cursor:pointer;
 }
 *::selection{
 color: orange;
@@ -23,7 +24,7 @@ html , body{
 .loader{
     width: 100%;
     height: 100vh;
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(12, 12, 12);
     text-align: center;
 }
 .loader .topheading{
@@ -34,37 +35,57 @@ html , body{
 }
 .topheading h5{
     font-family: 'Tektur', sans-serif;
-
     text-align: center;
     text-transform: uppercase;
-    font-size: .7vw;
+    font-size: .98vw;
     font-weight: 2vw;
     font-style: italic;
 }
+
 .loader h1{
     font-family: 'Tektur', sans-serif;
     position: absolute;
     top: 45%;
-    left: 51%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2vw;
+    font-size: 3.2vw;
     font-weight: 2.5vw;
     font-style: italic;
+    width: 100%;
+    max-width: 100vw;
+    /* background-color: rgb(224, 26, 26); */
+    display: flex;
+    justify-content: center;
 }
 .loader h1 span{
     font-family: 'Tektur', sans-serif;
     font-weight: 2.8vw;
-color: rgb(170, 0, 170)
+color: rgb(252, 227, 252)
 }
 .loader h1 span::selection{
     color: rgb(0, 255, 42);
         background-color: black;
     }
 
+.reveal .parent {
+        /* background-color: red;  */
+        display:block; 
+        overflow-y: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+}
+.reveal .parent .child{
+    display: block;
+    /* transform: translateY(-70%);  will do this in gsap*/
+}
+.parent .child span{
+    display: inline-block;
+}
 .green{
     position: absolute;
     top: 100%;
-    background-color: #14e0a0;
+    background-color: #0eeda7;
     width: 100%;
     height: 0vh;
 }
