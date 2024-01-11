@@ -1,107 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@600&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gilroy';
-    cursor:pointer;
-}
-::-webkit-scrollbar-track {
-    background: var(rgb(255, 255, 255));
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(151, 152, 151, 0.883);
-}
-*::selection{
-color: orange;
-    background-color: black;
-}
-html , body{
-    height: 100%;
-    width: 100%;
-}
-.main{
-    width: 100%;
-    /* dont give height */
-}
-.loader{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(12, 12, 12);
-    text-align: center;
-    /* display: none; */
-    z-index: 100;
-}
-.loader .topheading{
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-.topheading h5{
-    font-family: 'Tektur', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.2vw;
-    font-weight: 3vw;
-    font-style: italic;
-    color: #fefbe0;
-}
-
-.loader h1{
-    font-family: 'Tektur', sans-serif;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3.2vw;
-    font-weight: 4vw;
-    font-style: italic;
-    width: 100%;
-    max-width: 100vw;
-    /* background-color: rgb(224, 26, 26); */
-    display: flex;
-    justify-content: center;
-}
-.loader h1 span{
-    font-family: 'Tektur', sans-serif;
-    font-weight: 2.8vw;
-color: #fefbe0;
-margin-right: .58vw;
-}
-.loader h1 span::selection{
-    color: rgb(0, 255, 42);
-        background-color:#0e100f;
-    }
-
-.reveal .parent {
-        /* background-color: red;  */
-        display:block; 
-        overflow-y: hidden;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-}
-.reveal .parent .child{
-    display: block;
-    /* transform: translateY(-70%);  will do this in gsap*/
-}
-.parent .child span{
-    display: inline-block;
-}
-.green{
-    /* display: none; */
-    position: absolute;
-    top: 100%;
-    background-color: #0eeda7;
-    width: 100%;
-    height: 0vh;
-    background-image: linear-gradient( #01fdad, #0eeda7,#fefbe0);
-}
 /* homepage styling */
 .home{
     width: 100%;
@@ -123,11 +21,16 @@ margin-right: .58vw;
     text-transform: uppercase;
     font-weight: 500;
     font-size: .8vw;
+    color: black;
 }
 .nav a{
     width: max-content;
     position: relative;
     cursor: pointer;
+    height: 2vh;
+    width: auto;
+    padding: 1vw;
+    /* background-color: red; */
 }
 .nav a::after{
     content: "";
@@ -136,7 +39,7 @@ margin-right: .58vw;
     height: 1px;
     width: 100%;
     left: 0;
-    background-color: #378a00;
+    background-color: #80eb39;
     transition: 0.30s;
     transition-timing-function: easy-in-out;
     transform: scaleX(0)
