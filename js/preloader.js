@@ -23,15 +23,32 @@ function revealTospan() {
 revealTospan();
 
 var t1= gsap.timeline();
+document.body.style.overflow = 'hidden';
 
-gsap.from(".topheading h5",{
+t1.from(".blr",{
+    scale:.3,
+    opacity:1,
+    y:1000,
+    stagger:.23,
+    duration:.8,
+    borderRadius: "50",
+    ease: Power3.easeInOut
+})
+t1.to(".blr",{
+   opacity:.55,
+   stagger:.20,
+   duration:.2,
+   borderRadius: "55",
+   scale:1.2
+})
+t1.from(".topheading h5",{
     x:120,
     opacity:0,
-    stagger:.2,
-    duration:1.35,
+    stagger:.15,
+    duration:1,
     color: "green",
     ease: Power3.easeInOut
-    })
+    });
 
 t1.from(".child span",{
 x:120,
@@ -47,7 +64,21 @@ t1.to(".parent .child", {
     duration: 1,
     ease: Power3.easeInOut
 });
+t1.to(".blr", {
+    opacity: 0.85,
+    stagger: 0.27,
+    duration: 0.2,
+    borderRadius: "55%",
+    scale:1.2
+});
 
+t1.to(".blr",{
+    opacity:.6,
+    y:-1000,
+    stagger:.2,
+    duration:.7,
+    ease: Power3.easeInOut
+})
 t1.to(".loader", {
     height:0,
     duration: 1,
@@ -55,21 +86,29 @@ t1.to(".loader", {
 });
 
 t1.to(".green", {
-    height:"100%",
-    top:0,
-    delay:-.73,
-    duration: 1,
-    ease: Power3.easeInOut
+    height: "100%",
+    width: "100%",
+    opacity: 1,
+    "z-index": 999, 
+    top: 0,
+    left: 0,
+    delay: -0.73, 
+    duration: 1.3,
+    ease: Power3.easeInOut,
 });
+
 t1.to(".green", {
     height:"0%",
     delay:-.2,
     duration: .7,
     ease: Power3.easeInOut
 });
-t1.from(".nav a",{
-opacity:0,
-y:-20,
-duration:.35,
-delay:.15
-})
+t1.eventCallback("onComplete", function() {
+    document.body.style.overflow = ''; 
+});
+// t1.from(".nav a",{
+// opacity:0,
+// y:-20,
+// duration:.35,
+// delay:.15
+// })
