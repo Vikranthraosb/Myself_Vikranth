@@ -125,7 +125,7 @@ text-decoration: none;
     transform: translate(-50%, -50%) rotate(90deg) translate(100px, 0);
     width: 95px;
     height: 95px;
-    opacity: .9;
+    opacity: .85;
     border-radius: 10%;
     background-color: rgb(255, 187, 59);
 }
