@@ -30,10 +30,10 @@ html , body{
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(50, 50, 50);
     text-align: center;
     /* display: none; */
-    z-index: 100;
+    z-index: 300;
 }
 .loader .topheading{
     position: absolute;
@@ -48,7 +48,7 @@ html , body{
     font-size: 1.2vw;
     font-weight: 3vw;
     font-style: italic;
-    color: #fefbe0;
+    color: #fffbc7;
 }
 
 .loader h1{
@@ -65,12 +65,15 @@ html , body{
     /* background-color: rgb(224, 26, 26); */
     display: flex;
     justify-content: center;
+    color: #fffbc7;
+
 }
 .loader h1 span{
     font-family: 'Tektur', sans-serif;
     font-weight: 2.8vw;
-color: #fefbe0;
+    color: #bfffa5;
 margin-right: .58vw;
+
 }
 .loader h1 span::selection{
     color: rgb(0, 255, 42);
@@ -96,8 +99,35 @@ margin-right: .58vw;
     /* display: none; */
     position: absolute;
     top: 100%;
-    background-color: #0eeda7;
+    background-color: #00ef60;
     width: 100%;
     height: 0vh;
-    background-image: linear-gradient( #01fdad, #0eeda7,#fefbe0);
+    background-image: linear-gradient( #01fd87, #0eeda7,#fefbe0);
+}
+
+#blrone{
+    position: fixed;
+    right: 0%;
+    bottom: 50%;
+    width: 60px;
+    height: 60px;
+    opacity: .4;
+    background-color: rgb(255, 0, 0);
+}
+
+#blrtwo{
+    position: fixed;
+    left: 2%;
+    bottom: 70%;
+    width: 60px;
+    height: 60px;
+    opacity: .4;
+    -webkit-filter: blur(35px) saturate(10);
+            filter: blur(35px) saturate(10);
+    background-color: rgb(255, 194, 114);
+}
+
+.blr{
+    -webkit-filter: blur(25px) saturate(10);
+            filter: blur(25px) saturate(10);
 }
