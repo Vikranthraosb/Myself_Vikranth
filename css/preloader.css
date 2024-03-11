@@ -159,6 +159,6 @@ line-height: 1;
     background-color: rgb(60, 255, 0);
 }
 .blr{
-    -webkit-filter: blur(8px) saturate(10);
-            filter: blur(8px) saturate(10);
+    -webkit-filter: blur(3px) saturate(10);
+            filter: blur(3px) saturate(10);
 }
