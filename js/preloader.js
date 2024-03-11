@@ -24,7 +24,6 @@ revealTospan();
 
 var t1= gsap.timeline();
 document.body.style.overflow = 'hidden';
-
 t1.from(".blr",{
     scale:.3,
     opacity:1,
