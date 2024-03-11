@@ -29,31 +29,31 @@ t1.from(".blr",{
     scale:.3,
     opacity:1,
     y:1000,
-    stagger:.23,
-    duration:.8,
+    stagger:.20,
+    duration:.65,
     borderRadius: "50",
     ease: Power3.easeInOut
 })
 t1.to(".blr",{
-   opacity:.55,
-   stagger:.20,
+   opacity:.65,
+   stagger:.15,
    duration:.2,
    borderRadius: "55",
    scale:1.2
 })
 t1.from(".topheading h5",{
-    x:120,
+    x:150,
     opacity:0,
-    stagger:.15,
-    duration:1,
+    stagger:.1,
+    duration:.6,
     color: "green",
     ease: Power3.easeInOut
     });
 
 t1.from(".child span",{
-x:120,
+x:150,
 opacity:0,
-stagger:.2,
+stagger:.19,
 duration:1.5,
 color: "green",
 ease: Power3.easeInOut
@@ -61,12 +61,12 @@ ease: Power3.easeInOut
 
 t1.to(".parent .child", {
     y: "-100%", 
-    duration: 1,
+    duration: .6,
     ease: Power3.easeInOut
 });
 t1.to(".blr", {
     opacity: 0.85,
-    stagger: 0.27,
+    stagger: 0.17,
     duration: 0.2,
     borderRadius: "55%",
     scale:1.2
@@ -75,8 +75,8 @@ t1.to(".blr", {
 t1.to(".blr",{
     opacity:.6,
     y:-1000,
-    stagger:.2,
-    duration:.7,
+    stagger:.1,
+    duration:.4,
     ease: Power3.easeInOut
 })
 t1.to(".loader", {
@@ -92,23 +92,24 @@ t1.to(".green", {
     "z-index": 999, 
     top: 0,
     left: 0,
-    delay: -0.73, 
-    duration: 1.3,
+    delay: -0.70, 
+    duration: 1.5,
     ease: Power3.easeInOut,
 });
 
 t1.to(".green", {
     height:"0%",
-    delay:-.2,
-    duration: .7,
+    delay:-.23,
+    duration: .6,
     ease: Power3.easeInOut
 });
 t1.eventCallback("onComplete", function() {
     document.body.style.overflow = ''; 
 });
-// t1.from(".nav a",{
-// opacity:0,
-// y:-20,
-// duration:.35,
-// delay:.15
-// })
+t1.from(".nav a",{
+opacity:0,
+y:-20,
+duration:.35,
+delay:.15
+})
+
