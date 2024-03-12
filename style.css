@@ -30,6 +30,8 @@
     height: 2vh;
     width: auto;
     padding: 1vw;
+    letter-spacing: 2px; /* Adjust the value as needed */
+
     /* background-color: red; */
 }
 .nav a::after{
@@ -40,29 +42,23 @@
     width: 100%;
     left: 0;
     background-color: #80eb39;
-    transition: 0.30s;
+    transition: 0.20s;
     transition-timing-function: easy-in-out;
     transform: scaleX(0)
 }
 .nav a:hover::after
 {
     transform: scaleX(1.25);
-    transform: scaleY(2.3)
+    transform: scaleY(3.9)
 }
 
 
 /* @media(max-width:600px){
     .loader h1{
-        position: relative;
-        top: 50%;
-    }
-    .loader h1 span{
-       font-size: 3.35vh;
-   margin-right: 1vh;
+       display: none;
     }
 
     .topheading h5{
-        font-size: 1.8vh;
-       
+display: none;       
     }
 } */
