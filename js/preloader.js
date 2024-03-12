@@ -29,13 +29,13 @@ t1.from(".blr",{
     opacity:1,
     y:1000,
     stagger:.15,
-    duration:.55,
+    duration:.45,
     borderRadius: "50",
     ease: Power3.easeInOut
 })
 t1.to(".blr",{
-   opacity:.65,
-   stagger:.15,
+   opacity:.55,
+   stagger:.1,
    duration:.2,
    borderRadius: "55",
    scale:1.2
@@ -43,8 +43,8 @@ t1.to(".blr",{
 t1.from(".topheading h5",{
     x: 150,
     opacity: 0,
-    stagger: 0.1,
-    duration: 0.4,
+    stagger: 0.3,
+    duration: 0.7,
     color: "green",
     letterSpacing: "12px",
     ease: Power3.easeInOut
@@ -61,11 +61,13 @@ ease: Power3.easeInOut
 
 t1.to(".parent .child", {
     y: "-100%", 
-    duration: .7,
+    duration: .9,
+    stagger:.19,
+
     ease: Power3.easeInOut
 });
 t1.to(".blr", {
-    opacity: 0.85,
+    opacity: 1,
     stagger: 0.12,
     duration: 0.2,
     borderRadius: "55%",
