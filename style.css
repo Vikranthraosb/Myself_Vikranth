@@ -4,7 +4,7 @@
 .home{
     width: 100%;
     height: 100vh;
-    background-color: #f4f2e5;
+    background-color: #f3f3f3;
 }
 .home .nav{
     display: flex;
@@ -21,7 +21,7 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: .8vw;
-    color: black;
+    color: #ff501b; 
 }
 .nav a{
     width: max-content;
