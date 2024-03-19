@@ -38,7 +38,8 @@ t1.to(".blr",{
    stagger:.1,
    duration:.2,
    borderRadius: "55",
-   scale:1.2
+   scale:1.1,
+
 })
 t1.from(".topheading h5",{
     x: 150,
